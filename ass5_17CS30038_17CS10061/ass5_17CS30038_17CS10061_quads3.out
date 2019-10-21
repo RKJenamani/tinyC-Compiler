@@ -1,0 +1,125 @@
+
+____________________________________________________________________________________________________
+Three Address Code:
+____________________________________________________________________________________________________
+
+L0: main: 
+L1:     t0 = 0
+L2:     sum = t0
+L3:     t1 = 100
+L4:     c = t2
+L5:     t3 = 'a'
+L6:     a = t3
+L7:     t4 = 5
+L8:     t5 = 5
+L9:     t6 = 5
+L10:     t7 = 5
+L11:     n = t7
+L12:     t9 = 100
+L13:     j = t9
+L14:     t11 = 0
+L15:     i = t11
+L16:     t13 = !i
+L17:     t14 = 5
+L18:     if t13 < t14 goto 20
+L19:     goto 28
+L20:     t15 = i
+L21:     i = i + 1
+L22:     t16 = j
+L23:     j = j - 1
+L24:     t17 = i * 4
+L25:     t18 = i * j
+L26:     p[t17] = t18
+L27:     goto 16
+L28:     t20 = i * 4
+L29:     t21 = p[t20]
+L30:     t22 = sum + t21
+L31:     sum = t22
+L32:     if i < n goto 28
+L33:     goto 34
+L34:     t24 = 0
+L35:     i = t24
+L36:     if i < n goto 41
+L37:     goto 56
+L38:     t26 = i
+L39:     i = i + 1
+L40:     goto 36
+L41:     t27 = 0
+L42:     j = t27
+L43:     if j < n goto 48
+L44:     goto 38
+L45:     t29 = j
+L46:     j = j + 1
+L47:     goto 43
+L48:     t30 = i * 20
+L49:     t32 = j * 4
+L50:     t31 = t30 + t32
+L51:     t33 = i * j
+L52:     t34 = sum + t33
+L53:     dp[t31] = t34
+L54:     goto 45
+L55:     goto 38
+L56:     t36 = 0
+L57:     return t36
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+Table Name: Global			 Parent Name: NULL
+____________________________________________________________________________________________________
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+main           int                 -                   4              0              main
+----------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________
+Table Name: main			 Parent Name: Global
+____________________________________________________________________________________________________
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+return         int                 -                   4              0              NULL
+i              int                 -                   4              4              NULL
+j              int                 -                   4              8              NULL
+n              int                 -                   4              12             NULL
+sum            int                 0                   4              16             NULL
+t0             int                 0                   4              20             NULL
+c              arr(100,char)       "The answer is:"    100            24             NULL
+t1             int                 100                 4              124            NULL
+t2             ptr(char)           "The answer is:"    4              128            NULL
+a              char                'a'                 1              132            NULL
+t3             char                'a'                 1              133            NULL
+p              arr(5,int)          -                   20             134            NULL
+t4             int                 5                   4              154            NULL
+dp             arr(5,arr(5,int))   -                   100            158            NULL
+t5             int                 5                   4              258            NULL
+t6             int                 5                   4              262            NULL
+t7             int                 5                   4              266            NULL
+t8             int                                     4              270            NULL
+t9             int                 100                 4              274            NULL
+t10            int                                     4              278            NULL
+t11            int                 0                   4              282            NULL
+t12            int                                     4              286            NULL
+t13            int                                     4              290            NULL
+t14            int                 5                   4              294            NULL
+t15            int                                     4              298            NULL
+t16            int                                     4              302            NULL
+t17            int                                     4              306            NULL
+t18            int                                     4              310            NULL
+t19            int                                     4              314            NULL
+t20            int                                     4              318            NULL
+t21            int                                     4              322            NULL
+t22            int                                     4              326            NULL
+t23            int                                     4              330            NULL
+t24            int                 0                   4              334            NULL
+t25            int                                     4              338            NULL
+t26            int                                     4              342            NULL
+t27            int                 0                   4              346            NULL
+t28            int                                     4              350            NULL
+t29            int                                     4              354            NULL
+t30            int                                     4              358            NULL
+t31            int                                     4              362            NULL
+t32            int                                     4              366            NULL
+t33            int                                     4              370            NULL
+t34            int                                     4              374            NULL
+t35            int                                     4              378            NULL
+t36            int                 0                   4              382            NULL
+----------------------------------------------------------------------------------------------------
+

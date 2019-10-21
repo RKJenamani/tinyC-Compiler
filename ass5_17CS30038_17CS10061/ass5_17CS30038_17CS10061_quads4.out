@@ -1,0 +1,103 @@
+
+____________________________________________________________________________________________________
+Three Address Code:
+____________________________________________________________________________________________________
+
+L0: swapTwoNumbers: 
+L1:     t0 = *a
+L2:     temp = t0
+L3:     t1 = *a
+L4:     t2 = *b
+L5:     *a = t2
+L6:     t3 = *b
+L7:     *b = temp
+L8:     return 
+
+L9: division: 
+L10:     t0 = a / b
+L11:     t1 = float2int(t0)
+L12:     quotient = t1
+L13:     return quotient
+
+L14: main: 
+L15:     t0 = 0
+L16:     q = t0
+L17:     t1 = 0
+L18:     r = t1
+L19:     t2 = 2.5
+L20:     x = t2
+L21:     param x
+L22:     t3 = 1.2
+L23:     param t3
+L24:     t4 = call division, 2
+L25:     q = t4
+L26:     t6 = 10
+L27:     r = t6
+L28:     t8 = &q
+L29:     param t8
+L30:     t9 = &r
+L31:     param t9
+L32:     t10 = call swapTwoNumbers, 2
+L33:     return 
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+Table Name: Global			 Parent Name: NULL
+____________________________________________________________________________________________________
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+swapTwoNumbers void                -                   0              0              swapTwoNumbers
+division       int                 -                   4              0              division
+main           int                 -                   4              4              main
+----------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________
+Table Name: swapTwoNumbers			 Parent Name: Global
+____________________________________________________________________________________________________
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+a              ptr(int)            -                   4              0              NULL
+b              ptr(int)            -                   4              4              NULL
+temp           int                 -                   4              8              NULL
+t0             int                                     4              12             NULL
+t1             int                                     4              16             NULL
+t2             int                                     4              20             NULL
+t3             int                                     4              24             NULL
+----------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________
+Table Name: division			 Parent Name: Global
+____________________________________________________________________________________________________
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+a              float               -                   8              0              NULL
+b              float               -                   8              8              NULL
+return         int                 -                   4              16             NULL
+quotient       int                 -                   4              20             NULL
+t0             float                                   8              24             NULL
+t1             int                                     4              32             NULL
+----------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________
+Table Name: main			 Parent Name: Global
+____________________________________________________________________________________________________
+Name           Type                Initial Value       Size           Offset         Nested
+                                                                                                    
+return         int                 -                   4              0              NULL
+q              int                 0                   4              4              NULL
+t0             int                 0                   4              8              NULL
+r              int                 0                   4              12             NULL
+t1             int                 0                   4              16             NULL
+x              float               2.5                 8              20             NULL
+t2             float               2.5                 8              28             NULL
+division       int                 -                   4              36             NULL
+t3             float               1.2                 8              40             NULL
+t4             int                                     4              48             NULL
+t5             int                                     4              52             NULL
+t6             int                 10                  4              56             NULL
+t7             int                                     4              60             NULL
+swapTwoNumbers int                 -                   4              64             NULL
+t8             ptr(int)                                4              68             NULL
+t9             ptr(int)                                4              72             NULL
+t10            int                                     4              76             NULL
+----------------------------------------------------------------------------------------------------
+
