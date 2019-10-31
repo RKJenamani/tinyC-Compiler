@@ -12,7 +12,7 @@ void main()
 {
 	// Variable Declaration
 	int x=120;
-	int y=17,i,j,k,l,m,n,o,a;
+	int y=17,i,j,k,l,m,n,o;
 	char ch='c', d = 'a'; // character definitions
 
 	// Arithmetic Operations
@@ -23,9 +23,6 @@ void main()
 	m = x%y;
 	n = x&y;
 	o = x|y;
-	a = 2+3*3;
-	o = 2*3+3;
-	n=!a; 
 	
 	y = i<<2;
 	x = i>>1;

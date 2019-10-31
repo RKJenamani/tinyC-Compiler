@@ -1,10 +1,9 @@
-// number arrays (multidimensional) , character arrays, loops and nested loops
+//  arrays (multidimensional) ,  loops and nested loops
 
 int main()
 {
 	int i, j, n;
 	int sum=0;
-	char c[100]="The answer is:"; // character array
 	char a='a';
 	int p[5]; // 1D integer array
 	int dp[5][5]; // 2D integer array
@@ -12,10 +11,10 @@ int main()
 	j=100;
 	i=0;
 
-	while(!(i<5)) // while loop
+	while(i<5) // while loop
 	{
 		i++;
-		j--;
+		++j;
 		p[i]=i*j;
 	}
 
